@@ -1,11 +1,13 @@
 const sql = require('./db.js');
 
+// constructor
 const Item = function(item) {
     this.name = item.name;
     this.description = item.description;
 };
 
 Item.create = (newItem, result) => {
+    console.log('cycyu');
     sql.query( 'INSERT INTO items SET ?', newItem, (err, res) => {
         if (err) {
             console.log('error: ', err);

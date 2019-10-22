@@ -11,6 +11,8 @@ app.get('/', (req, res) => {
     res.json({ message: 'welcome to drone app' });
 });
 
+require('./app/routes/item.routes.js')(app);
+
 const PORT = process.env.PORT || 9000;
 
 app.listen(PORT, () => {

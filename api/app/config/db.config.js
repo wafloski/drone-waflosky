@@ -1,9 +1,7 @@
-const dbConfig = {
-    HOST: 'sql.test.com',
-    USER: 'admin',
-    PASSWORD: 'test',
-    DB: 'test',
+module.exports = {
+    HOST: 'sql.test.pl',
+    USER: 'test1name',
+    PASSWORD: 'secret',
+    DB: 'test1name',
     PORT: '3306'
 };
-
-export default dbConfig;
