@@ -2,8 +2,6 @@ const Item = require('../models/item.model.js');
 
 // create and save a new item
 exports.createItem = (req, res) => {
-
-    console.log('jestem tu');
     if (!req.body) {
         res.status(400).send({
             message: 'content can not be empty!'
